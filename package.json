@@ -2,7 +2,10 @@
   "name": "boardgame.io",
   "version": "0.50.2",
   "description": "library for turn-based games",
-  "repository": "https://github.com/boardgameio/boardgame.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boardgameio/boardgame.io.git"
+  },
   "scripts": {
     "prestart": "run-p examples:install build",
     "start": "run-p dev:server dev:client",
@@ -100,7 +103,7 @@
     "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
-    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-module-resolver": "^5.0.0",
     "benchmark": "^2.1.4",
     "cross-env": "^7.0.3",
     "docsify-cli": "^4.4.4",
@@ -129,7 +132,7 @@
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-filesize": "^6.0.0",
-    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-builtins": "^2.0.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-svelte": "^6.1.1",
@@ -154,7 +157,7 @@
     "immer": "^9.0.5",
     "koa": "^2.13.3",
     "koa-body": "^5.0.0",
-    "koa-socket-2": "^2.0.0",
+    "koa-socket-2": "^1.2.0",
     "lodash.isplainobject": "^4.0.6",
     "nanoid": "^3.1.30",
     "p-queue": "^6.6.2",
@@ -208,5 +211,13 @@
       "pre-commit": "lint-staged",
       "pre-push": "npm run test:coverage"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/boardgameio/boardgame.io/issues"
+  },
+  "homepage": "https://github.com/boardgameio/boardgame.io#readme",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
   }
 }
